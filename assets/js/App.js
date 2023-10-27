@@ -24,3 +24,18 @@ const buttomContainer = document.getElementById('buttom-container');
     isOpgaveAdded = false;
   }
 });
+
+
+function subscribeToPushNotifications() {
+    self.registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: 'your_public_key'
+    })
+    .then(subscription => {
+      // Send the subscription object to your server for future use
+      sendSubscriptionToServer(subscription);
+    })
+    .catch(error => {
+      // Handle any errors that occur during subscription
+    });
+  }
