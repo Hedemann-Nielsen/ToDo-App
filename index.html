@@ -7,23 +7,42 @@
     <link rel="stylesheet" href="./assets/css/mainstylesheet.css">
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/icons/android/android-launchericon-48-48.png">
+        <!-- fontawsome link -->
+        <script src="https://kit.fontawesome.com/11e7a87280.js" crossorigin="anonymous"></script>
+
     <!-- Java -->
     <script src="./assets/js/App.js" defer></script>
 
     <title>ToDo App</title>    <!-- Ændre titel -->
 
 </head>
+<style>
+.icon-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .icon-button i {
+    margin-right: 5px;
+  }</style>
 <body>
     <div class="container">
         <div class="title">Opgaver</div>
         <div class="subtitle">Tilføj opgaver til din to-do liste</div>
-        <div class="input-container ic1">
-          <input id="opgave" class="input" type="text" placeholder="indtast opgave"/>
-          <div class="cut"></div>
-          <label for="opgave" class="placeholder"></label>
-          <button type="text" class="submit">Tilføj opgave</button>
+            <div class="input-container ic1">
+                <input id="opgaveIndput" class="input" type="text" placeholder="indtast opgave"/>
+                <button id="submit" type="text" class="submit">Tilføj opgave</button>
+                <ul id="opgaveoutput"></ul>
+            </div>
+         
+               <p class="buttom-container" id="buttom-container" >Tryk på  <i class="fa-solid fa-circle-xmark" id="remove"></i>
+           for at fjerne en opgave </p>
+           
         </div>
-        <div id="opgaveIndput"></div>
-      </div>
+    </div>
 </body>
 </html>
