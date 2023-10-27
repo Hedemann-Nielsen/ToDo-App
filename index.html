@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/mainstylesheet.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/android/android-launchericon-48-48.png">
     <!-- Java -->
     <script src="./assets/js/App.js" defer></script>
 
@@ -12,11 +14,16 @@
 
 </head>
 <body>
-    <h1>Opgaver</h1>
-<form action="">
-    <label for="tilføj-opgave">Tilføj opgave</label>
-    <input type="text">
-    <button type="submit">Tilføj</button>
-</form>
+    <div class="container">
+        <div class="title">Opgaver</div>
+        <div class="subtitle">Tilføj opgaver til din to-do liste</div>
+        <div class="input-container ic1">
+          <input id="opgave" class="input" type="text" placeholder="indtast opgave"/>
+          <div class="cut"></div>
+          <label for="opgave" class="placeholder"></label>
+          <button type="text" class="submit">Tilføj opgave</button>
+        </div>
+        <div id="opgaveIndput"></div>
+      </div>
 </body>
 </html>
